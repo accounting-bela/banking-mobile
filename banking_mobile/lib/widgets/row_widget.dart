@@ -1,4 +1,4 @@
-import 'package:banking_mobile/models/list_item.dart';
+import 'package:banking_mobile/models/list_item_nav.dart';
 import 'package:flutter/material.dart';
 
 class RowWidget extends StatelessWidget {
@@ -7,10 +7,11 @@ class RowWidget extends StatelessWidget {
     required this.listItem,
   }) : super(key: key);
 
-  final ListItem listItem;
+  final ListItemNav listItem;
 
   @override
   Widget build(BuildContext context) {
+
     return ListTile(
       leading: listItem.icon,
       title: Text(listItem.name),

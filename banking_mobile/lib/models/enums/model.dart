@@ -44,3 +44,9 @@ enum Model {
   HR69,
   HR99
 }
+
+extension ParseToString on Model {
+  String toShortString() {
+    return this.toString().split('.').last;
+  }
+}

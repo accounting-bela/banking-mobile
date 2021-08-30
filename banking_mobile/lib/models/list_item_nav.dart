@@ -1,8 +1,8 @@
 import 'package:banking_mobile/pages/bill.dart';
 import 'package:flutter/material.dart';
 
-class ListItem {
-  const ListItem({
+class ListItemNav {
+  const ListItemNav({
     required this.icon,
     required this.name,
     required this.path
@@ -12,8 +12,8 @@ class ListItem {
   final String name;
   final Widget path;
 
-  static List<ListItem> listItems = [
-    ListItem(
+  static List<ListItemNav> listItems = [
+    ListItemNav(
         icon: Icon(
           Icons.receipt,
           size: 48.0,

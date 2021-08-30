@@ -1,11 +1,15 @@
 import 'dart:convert';
 
 class SifraNamjene {
-  int _rbr;
-  String _klasifikacija;
-  String _sifra;
-  String _naziv;
-  String _definicija;
+  int? _rbr;
+  String? _klasifikacija;
+  String? _sifra;
+  String? _naziv;
+  String? _definicija;
+
+  SifraNamjene.empty();
+
+
 
   SifraNamjene.fromJson(Map<String, dynamic> json)
     : _rbr = json['rbr'],
@@ -24,4 +28,14 @@ class SifraNamjene {
     };
     return jsonEncode(json);
   }
+
+  int? get rbr => _rbr;
+
+  String? get klasifikacija => _klasifikacija;
+
+  String? get sifra => _sifra;
+
+  String? get naziv => _naziv;
+
+  String? get definicija => _definicija;
 }
